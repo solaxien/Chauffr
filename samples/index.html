@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chauffr AI - Autonomous Co-Browsing Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+      background: #fdfdfd;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #4b5563;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #eef2ff 0%, #faf5ff 100%);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .section-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      margin-bottom: 0.8rem;
+    }
+    details {
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="font-weight: 700; font-size: 1.2rem; color: #4f46e5;">CloudScale Corp</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#enterprise-sla">Enterprise SLA</a>
+      <a href="#faq-billing">Billing FAQ</a>
+      <a href="#account-settings">Settings</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Autonomous Website Copilot Demo (Powered by Chauffr)</h1>
+    <p style="max-width: 600px; margin: 0 auto; color: #6b7280;">
+      Click the Chauffr launcher widget in the bottom-right corner and ask questions like 
+      <em>"Where can I find the Enterprise SLA guarantee?"</em> or <em>"How do I update billing?"</em>
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="section-card" id="features">
+      <span class="badge">Architecture</span>
+      <h2>Platform Overview</h2>
+      <p>CloudScale delivers automated cloud infrastructure for global enterprise teams.</p>
+    </div>
+
+    <div class="section-card" id="enterprise-sla" data-chauffr-target="enterprise-sla" data-navguide-target="enterprise-sla">
+      <span class="badge">Uptime & Compliance</span>
+      <h2>Enterprise SLA & Uptime Guarantee</h2>
+      <p>
+        We commit to a <strong>99.99% monthly uptime service level agreement</strong> for all Enterprise tier customers.
+        Failure to meet this SLA results in progressive service credits applied automatically to your billing invoice.
+      </p>
+      <ul>
+        <li>Dedicated Technical Account Manager (TAM)</li>
+        <li>15-minute emergency response SLA</li>
+        <li>Multi-region automatic failover</li>
+      </ul>
+    </div>
+
+    <div class="section-card" id="faq-billing" data-chauffr-target="faq-billing" data-navguide-target="faq-billing">
+      <span class="badge">Invoicing</span>
+      <h2>Billing & Payment Methods FAQ</h2>
+      <p>All plans support automated monthly credit card billing or annual invoicing with Net-30 payment terms.</p>
+      <details id="faq-payment-drawer" data-drawer="billing-methods">
+        <summary>What payment methods do you accept?</summary>
+        <p style="margin-top: 0.8rem;">We accept Visa, MasterCard, American Express, SEPA direct debit, and wire transfers for annual contracts.</p>
+      </details>
+    </div>
+
+    <div class="section-card" id="account-settings" data-chauffr-target="account-settings" data-navguide-target="account-settings">
+      <span class="badge">Account Management</span>
+      <h2>Workspace Settings</h2>
+      <p>Manage members, workspace domains, audit logs, and security policies.</p>
+    </div>
+  </div>
+
+  <!-- Include Compiled Chauffr Widget -->
+  <script type="module" src="../src/Chauffr.Widget/dist/index.js"></script>
+  <!-- Mount the Autonomous Copilot Element -->
+  <chauffr-copilot data-hub-url="http://localhost:5000/chathub"></chauffr-copilot>
+
+</body>
+</html>

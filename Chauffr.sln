@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81ACD1F5-FA23-4C22-A21F-7C35C7CC7436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chauffr.Core", "src\Chauffr.Core\Chauffr.Core.csproj", "{7F64642F-1A72-41C6-8DAF-D6D8F62995BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chauffr.Indexing", "src\Chauffr.Indexing\Chauffr.Indexing.csproj", "{1D21DD62-096A-4452-BE45-91B9F12342DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chauffr.Crawler", "src\Chauffr.Crawler\Chauffr.Crawler.csproj", "{45CD4B15-C64D-4326-817F-0BB083EA3BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chauffr.Api", "src\Chauffr.Api\Chauffr.Api.csproj", "{E9BF7293-5DD8-48FE-9C54-7003087A9D41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{53C1F6F4-DFF6-451E-946A-03446287A18B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chauffr.Tests.Unit", "tests\Chauffr.Tests.Unit\Chauffr.Tests.Unit.csproj", "{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F64642F-1A72-41C6-8DAF-D6D8F62995BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F64642F-1A72-41C6-8DAF-D6D8F62995BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F64642F-1A72-41C6-8DAF-D6D8F62995BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F64642F-1A72-41C6-8DAF-D6D8F62995BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D21DD62-096A-4452-BE45-91B9F12342DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D21DD62-096A-4452-BE45-91B9F12342DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D21DD62-096A-4452-BE45-91B9F12342DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D21DD62-096A-4452-BE45-91B9F12342DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CD4B15-C64D-4326-817F-0BB083EA3BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CD4B15-C64D-4326-817F-0BB083EA3BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CD4B15-C64D-4326-817F-0BB083EA3BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CD4B15-C64D-4326-817F-0BB083EA3BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BF7293-5DD8-48FE-9C54-7003087A9D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BF7293-5DD8-48FE-9C54-7003087A9D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BF7293-5DD8-48FE-9C54-7003087A9D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BF7293-5DD8-48FE-9C54-7003087A9D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F64642F-1A72-41C6-8DAF-D6D8F62995BA} = {81ACD1F5-FA23-4C22-A21F-7C35C7CC7436}
+		{1D21DD62-096A-4452-BE45-91B9F12342DC} = {81ACD1F5-FA23-4C22-A21F-7C35C7CC7436}
+		{45CD4B15-C64D-4326-817F-0BB083EA3BA2} = {81ACD1F5-FA23-4C22-A21F-7C35C7CC7436}
+		{E9BF7293-5DD8-48FE-9C54-7003087A9D41} = {81ACD1F5-FA23-4C22-A21F-7C35C7CC7436}
+		{DBA69DF5-6904-4758-8A5A-F0AAF3E21AA8} = {53C1F6F4-DFF6-451E-946A-03446287A18B}
+	EndGlobalSection
+EndGlobal
